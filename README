@@ -7,12 +7,29 @@ docker-compose up -d
 
 You can restore each database running each of these commands individually:
 
+sample_airbnb
 docker exec -it mongo mongorestore --db=sample_airbnb /backup/sample_airbnb/sample_airbnb
+
+sample_analytics
 docker exec -it mongo mongorestore --db=sample_analytics /backup/sample_analytics/sample_analytics
+
+sample_geospatial
 docker exec -it mongo mongorestore --db=sample_geospatial /backup/sample_geospatial/sample_geospatial
+
+sample_guides
 docker exec -it mongo mongorestore --db=sample_guides /backup/sample_guides/sample_guides
+
+sample_mflix
 docker exec -it mongo mongorestore --db=sample_mflix /backup/sample_mflix/sample_mflix
+
+sample_restaurants
 docker exec -it mongo mongorestore --db=sample_restaurants /backup/sample_restaurants/sample_restaurants
+
+sample_supplies
 docker exec -it mongo mongorestore --db=sample_supplies /backup/sample_supplies/sample_supplies
+
+sample_training
 docker exec -it mongo mongorestore --db=sample_training /backup/sample_training/sample_training
+
+sample_weatherdata
 docker exec -it mongo mongorestore --db=sample_weatherdata /backup/sample_weatherdata/sample_weatherdata
